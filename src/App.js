@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Expanded } from './components/Expanded/Expanded';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Expanded
+          title={'Visa infinite Сбербанк первый'}
+          cardNumber={'8888'}
+          dateTo={'07.08.2019'}
+          amount={28.756}
+          currency={'₽'}
+          text={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor cursus, ultricies nibh eget,
+          viverra elit. Fusce porta mi in est feugiat tincidunt. Proin auctor lorem enim, at fermentum nunc suscipit ut.
+          Proin commodo ligula at semper pellentesque. Sed facilisis ut augue eu tincidunt. Integer id lacus purus.
+          In vitae consequat quam. Etiam ac fermentum libero, ut fringilla arcu. Aliquam erat volutpat.
+          Pellentesque non leo vitae velit molestie finibus eget ut est.`}
+      />
+            <Expanded
+          title={'Visa infinite Сбербанк первый'}
+          cardNumber={'8888'}
+          dateTo={'14.08.2019'}
+          amount={28.756}
+          currency={'₽'}
+          text={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor cursus, ultricies nibh eget,
+          viverra elit. Fusce porta mi in est feugiat tincidunt. Proin auctor lorem enim, at fermentum nunc suscipit ut.
+          Proin commodo ligula at semper pellentesque. Sed facilisis ut augue eu tincidunt. Integer id lacus purus.
+          In vitae consequat quam. Etiam ac fermentum libero, ut fringilla arcu. Aliquam erat volutpat.
+          Pellentesque non leo vitae velit molestie finibus eget ut est.`}
+      />
     </div>
   );
 }
