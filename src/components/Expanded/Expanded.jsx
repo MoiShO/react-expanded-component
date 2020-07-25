@@ -4,7 +4,7 @@ import { Hide } from './Hide/Hide';
 import st from'./Expandend.module.css'
 
 
-export const Expanded = ({ title, cardNumber, dateTo, amount, currency, text }) => {
+export const Expanded = ({ title, cardNumber, dateTo, amount, currency, texts }) => {
     const [show, setShow] = useState(false);
 
     return (
@@ -14,11 +14,13 @@ export const Expanded = ({ title, cardNumber, dateTo, amount, currency, text }) 
                     titles={[`${title}${currency ? `, ${currency}` : ''}`, `до ${dateTo}`, `${amount}${currency ? `, ${currency}` : ''}`]}
                     howSubtitle={[1]}
                     subTitles={[cardNumber]}
+                    show={show}
                 />
             </div>
+            {show && <hr className={st.devider}/>}
             <Hide
                 show={show}
-                text={text}
+                texts={texts}
             />
         </div>
     );
