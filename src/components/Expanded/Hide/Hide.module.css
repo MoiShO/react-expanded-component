@@ -5,10 +5,12 @@
     height: 100%;
     text-align: initial;
     color:  #848480;
+    white-space: pre-line;
 }
 
 .hide {
     transition: all .25s;
     opacity: 0;
     height: 0px;
+    white-space: pre-line;
 } 

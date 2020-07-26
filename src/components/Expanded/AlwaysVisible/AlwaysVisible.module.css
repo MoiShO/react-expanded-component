@@ -19,25 +19,39 @@
 .title {
     font-size: 1.2em;
     font-weight: bold;
+    flex: 3;
+    text-align: start;
+}
+
+.title_end { 
+    font-size: 1.2em;
+    font-weight: bold;
+    flex: 2;
+    flex-grow: 1;
+    text-align: end;
 }
 
 .subTitle {
     font-size: 1em;
     color: #848480;
-    align-self: flex-end;
+    align-self: center;
+    text-align: left;
+    flex: 1;
 }
 
 .arrow {
     transition: all .25s;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     align-items: flex-end;
+    padding: 7.5px 0px 7.5px 10px;
 }
 
 .rotate {
     transition: all .25s;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     align-items: flex-end;
     transform: rotateX(180deg);
+    padding: 7.5px 0px 7.5px 10px;
 }
